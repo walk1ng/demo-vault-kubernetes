@@ -18,11 +18,11 @@ spec:
         injector:
           enabled: true
           authPath: auth/host-cluster
-          externalVaultAddr: http://192.168.31.150:31820
+          externalVaultAddr: ""
         ui:
           enabled: true
           serviceType: "LoadBalancer"
-          ServiceNodePort: null
+          ServiceNodePort: 31820
           externalPort: 8200
   destination:
     server: https://kubernetes.default.svc
