@@ -18,12 +18,7 @@ spec:
         injector:
           enabled: true
           authPath: auth/host-cluster
-          externalVaultAddr: ""
-        ui:
-          enabled: true
-          serviceType: "LoadBalancer"
-          ServiceNodePort: 31820
-          externalPort: 8200
+          externalVaultAddr: "http://192.168.56.50:8200"
   destination:
     server: https://kubernetes.default.svc
     namespace: vault
