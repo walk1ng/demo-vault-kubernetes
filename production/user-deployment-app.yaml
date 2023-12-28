@@ -8,7 +8,7 @@ metadata:
 spec:
   project: demo-vault
   source:
-    path: user-deployment-only-inject
+    path: user-deployment
     repoURL: https://github.com/walk1ng/demo-vault-kubernetes.git
     targetRevision: HEAD
   destination:
