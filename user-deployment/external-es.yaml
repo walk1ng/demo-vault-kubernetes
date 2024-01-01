@@ -13,5 +13,5 @@ spec:
   data:
   - secretKey: hellolookatme
     remoteRef:
-      key: vault/es
+      key: vault/esfoo
       property: key
