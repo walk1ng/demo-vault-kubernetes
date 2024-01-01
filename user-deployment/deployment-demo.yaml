@@ -18,9 +18,9 @@ spec:
         vault.hashicorp.com/agent-inject: 'true'
         vault.hashicorp.com/agent-pre-populate-only: "true"
         vault.hashicorp.com/role: 'demo'
-        vault.hashicorp.com/agent-inject-secret-lookatme: "demo/data/vault/inject"
-        vault.hashicorp.com/secret-volume-path-lookatme: "/vault/inject"
-        vault.hashicorp.com/agent-inject-template-lookatme: |
+        vault.hashicorp.com/agent-inject-secret-mylookatme: "demo/data/vault/inject"
+        vault.hashicorp.com/secret-volume-path-mylookatme: "/vault/my-inject"
+        vault.hashicorp.com/agent-inject-template-mylookatme: |
           {{- with secret "demo/data/vault/inject" -}}
           {{ .Data.data.key }}
           {{- end -}}
