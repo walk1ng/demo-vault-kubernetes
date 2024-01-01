@@ -9,9 +9,10 @@ spec:
     name: secretstore
     kind: SecretStore
   target:
+    # the genereated secret name
     name: myes
   data:
-  - secretKey: hellolookatme
+  - secretKey: hellolookatme # the genereate file name
     remoteRef:
-      key: vault/esfoo
-      property: key
+      key: vault/es # the secret path in vault, the full path will include the secret engine as prefix, eg. /demo/vault/es
+      property: key # the key of the secret
