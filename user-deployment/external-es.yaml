@@ -9,9 +9,9 @@ spec:
     name: secretstore
     kind: SecretStore
   target:
-    name: es
+    name: myes
   data:
-  - secretKey: lookatme
+  - secretKey: hellolookatme
     remoteRef:
       key: vault/es
       property: key

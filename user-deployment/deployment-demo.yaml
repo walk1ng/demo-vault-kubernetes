@@ -38,4 +38,4 @@ spec:
       volumes:
       - name: es
         secret:
-          secretName: es
+          secretName: myes
